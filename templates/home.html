@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>this is homepage</title>
+  </head>
+  <body>
+    <a href="{% url 'about' %}">about me</a>
+
+    <h1>word count:</h1>
+     <form class="" action="{% url 'countpage'%}" method="get">
+
+       <textarea name="paragraph" rows="8" cols="80" placeholder="start typing here"></textarea>
+       <br>
+       <input type="submit" name="clickme" value="count here">
+
+
+
+     </form>
+
+
+
+
+  </body>
+</html>

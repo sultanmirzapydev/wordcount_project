@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>countpage</title>
+  </head>
+  <body>
+    <h1><a href="{% url 'home' %}">start again!</a></h1>
+    <h1>there are {{wordlen}} words in your text</h1>
+    <br>
+    <h1>your text:</h1>
+    <br>
+    <p>{{actualtext}}</p>
+    <br>
+    <h2>word count:</h2>
+    <br>
+    <p>{% for word,value in sortlist%}</p>
+    {{word}}--{{value}}
+    {%endfor%}
+
+
+
+  </body>
+</html>
